@@ -16,7 +16,7 @@ SAMPLE = sample.lisp
 all: $(NAME)
 
 $(NAME):
-	sbcl --load $(NAME).lisp
+	sbcl --noinform --load $(NAME).lisp
 
 sample:
 	sbcl --load $(SAMPLE)
